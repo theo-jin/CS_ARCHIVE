@@ -2,7 +2,7 @@
 
 
 ### 1장 [타입스크립트 알아보기](https://github.com/theo-jin/CsAndBooks/blob/main/Effective-TypeScript/chapter1/README.md)
-### 2장 타입스크립트의 타입시스템
+### 2장 [타입스크립트의 타입시스템](https://github.com/theo-jin/CsAndBooks/blob/main/Effective-TypeScript/chapter2/README.md)
 ### 3장 타입 추론
 ### 4장 타입 설계
 ### 5장 any 다루기
