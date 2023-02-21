@@ -1,2 +1,1 @@
-# Effective-TypeScript
-이펙티브 타입스크립트 책 정리
+# CS 지식 정리와 읽은 도서 정리
