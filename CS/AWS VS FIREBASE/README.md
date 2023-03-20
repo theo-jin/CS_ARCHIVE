@@ -1,6 +1,6 @@
 # AWS VS FIREBASE
 
-출처:AWS와 파이어베이스, 대표적인 클라우드 백엔드 소개!by 작은 개발자 :https://www.youtube.com/watch?v=NyILP2HuhkQ
+출처:AWS와 파이어베이스, 대표적인 클라우드 백엔드 소개!by [작은 개발자](https://www.youtube.com/watch?v=NyILP2HuhkQ)
 
 
 ### AWS
