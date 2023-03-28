@@ -1,2 +1,2 @@
 # 면접을 위한 CS 전공지식 노트
-## [1장 디자인 패턴과 프로그래밍 패러다임](https://github.com/theo-jin/CsAndBooks/blob/main/%EB%A9%B4%EC%A0%91%EC%9D%84%20%EC%9C%84%ED%95%9C%20CS%20%EC%A0%84%EA%B3%B5%EC%A7%80%EC%8B%9D%20%EB%85%B8%ED%8A%B8/1%EC%9E%A5/README.md)
+## [1장 디자인 패턴과 프로그래밍 패러다임](https://github.com/theo-jin/CsAndBooks/tree/main/%EB%A9%B4%EC%A0%91%EC%9D%84%20%EC%9C%84%ED%95%9C%20CS%20%EC%A0%84%EA%B3%B5%EC%A7%80%EC%8B%9D%20%EB%85%B8%ED%8A%B8/1%EC%9E%A5%20%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4%EA%B3%BC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84)
