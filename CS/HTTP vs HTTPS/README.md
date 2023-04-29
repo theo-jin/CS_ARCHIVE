@@ -1,6 +1,10 @@
 # HTTP vs HTTPS
 
 ### HTTP
+- HTTP(Hypertext Transfer Protocol)와 HTTPS(Hypertext Transfer Protocol Secure)는 인터넷에서 정보를 주고받는 데 사용되는 프로토콜입니다.
+
+- HTTP(HyperText Transfer Protocol)는 하이퍼 텍스트 전송 프로토콜으로 간단히 말해서 인터넷을 작동시키는 역할을 하며, 웹 서버 및 웹 브라우저 상호 간의 데이터 전송을 위한 응용계층 프로토콜입니다.
+- 웹 사이트에 액세스하기 위해서는 프로토콜 변형이 필요한데, 이때 웹 사이트 URL이 일반적으로 “http://www..”로 시작하며 URL에 해당하는 웹 페이지를 가져오기 위해 웹 사이트 서버에 명령을 보내 작동하게 됩니다.
 
 ### HTTPS
 - HTTPS는 HTTP에 SSL(Secure Socket Layer)이나 TLS(Transport Layer Security)를 추가하여 보안을 강화한 HTTP 요청을 말한다. 
