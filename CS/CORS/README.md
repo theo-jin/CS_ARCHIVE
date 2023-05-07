@@ -1,8 +1,11 @@
 # CORS(Cross-Origin Resource Sharing)
 
+
+![image](https://user-images.githubusercontent.com/83561523/236683640-6cd581d3-b7c2-4484-bc9f-9cc36af5a8b4.png)
+
 CORS(Cross-Origin Resource Sharing)란 웹 브라우저에서 보안상의 이유로 SOP(Same-Origin Policy)을 우회하는 방법 중 하나입니다.
 
-origin(Protocol,Host,Port)
+### origin(Protocol,Host,Port)
 
 여기서 SOP(Same-Origin Policy)는 동일 출처(Same-Origin) 서버에 있는 리소스는 자유로이 가져올수 있지만, 
 다른 출처(Cross-Origin) 서버에 있는 이미지나 리소스는 상호작용이 불가능하다는 정책입니다. 
