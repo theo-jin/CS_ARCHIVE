@@ -25,3 +25,22 @@
 2. 애니메이션 동작 후 스타일을 담을 className 만들기 
 3. transition 속성도 추가
 4. 원할 때 2번 탈부착
+
+
+## if문이 길때
+```
+  function TabContent({tab}){       
+      return (<div className="start end">
+{
+     [<div>내용0</div>,<div>내용1</div>,<div>내용2</div>] [tab]
+}</div>
+      )
+      //   if(tab==0){
+    //   return <div>내용0</div>
+    // }else if(tab==1){
+    //   return<div>내용1</div>
+    // }else if(tab==2){
+    //   return <div>내용2</div>
+    // }
+  }
+```
