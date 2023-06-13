@@ -55,7 +55,7 @@ enum Os{
 <br/>
 <br/>
 
-interface~프로퍼티를 정해서 객체를 표현할때 인터페이스 사용함.
+interface~프로퍼티를 정해서 객체를 표현할때 인터페이스 사용함.타입에 이름을 지어주는 또 다른 문법 +rorcpdml rnwhfmf wjddmlgksmsep  xmrghkehls ansqjq 
 
 ?:(옵셔널) 입력을 해도되고 안해도 되는 속성
 ```
