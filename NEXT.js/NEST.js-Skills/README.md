@@ -21,3 +21,8 @@
 그래서 큰 페이지들은 보통 server component로 만들고
 
 자바스크립트 기능이 필요한 특정 부분은 client component로 만들어서 넣는게 넣자.
+
+### useRouter
+1.여러 페이지 만들려면 >>>[Dynamic Route]
+2.현재 URL이 뭔지 궁금하면 props/useRouter
+3.페이지 이동, prefetch등은 useRouter
