@@ -148,4 +148,10 @@ SPA(Single-Page-Application)의 단점은 한번에 사용하지 않는 모든 �
 const SomeComponent = React.lazy(() => import('./SomeComponent'));
 Router로 분기가 나누어진 컴포넌트들을 위 코드처럼 lazy를 통해 import하면 해당 path로 이동할때 컴포넌트를 불러오게 되는데 이 과정에서 로딩하는 시간이 생기게 된다. 이 로딩되는 시간동안 로딩 화면을 보여지도록 해주는 역할을 하는 것이 바로 Suspense 이다.
 
+### 3.	Virtual Dom이 무엇인지 설명해 주세요.
+리액트에서 사용하는 dom업데이트 방법인데, 리액트는 virtual dom방식을 통해 dom업데이트를 추상화 함으로써 dom처리 횟수를 최소화하고 효율적으로 진행하는 방법. 
+데이터를 업데이트 하면 전체ui을 버추어 돔에 리렌더링
+이전 버추어 돔의 내용과 현재내용 비교
+바뀐부분만 실제돔에 적용.
+
 
