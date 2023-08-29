@@ -7,9 +7,8 @@
 #### [이벤트 위임에 대해서 설명해 주세요](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94)
 
 ## React
-#### 리액트를 사용해야하는 이유
+#### [리액트를 사용해야하는 이유](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/React/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0)
 #### [setState를 비동기인 이유](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/React/setState%EA%B0%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%EC%9D%B8%20%EC%9D%B4%EC%9C%A0)
-#### props와 state의 차이
 #### Context API와 Redux를 비교
 #### useMemo와 useCallback 
 #### [Virtual DOM에 대해 설명해주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/React/Virtual%20DOM%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.)
