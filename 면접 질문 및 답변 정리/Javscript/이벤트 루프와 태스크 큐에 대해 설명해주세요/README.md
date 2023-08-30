@@ -71,9 +71,13 @@ Call Stack 내에서 현재 실행중인 task가 있는지 그리고 Event Queue
 
 
 ### 매크로태스크와 마이크로태스크
-마이크로 태스크들은 실행하면서 새로운 마이크로 태스크를 큐에 추가할 수도 있다. 새롭게 추가된 마이크로 태스크도 큐가 빌 때까지 계속해서 실행된다.
+둘 다 콜백 함수나 이벤트 핸들러를 일시 저장한다는 점에서 동일하지만, 태스크 큐보다 마이크로태스크 큐가 더 우선순위가 높다.
+즉, 이벤트 루프는 콜 스택이 비면 먼저 마이크로태스크 큐에서 대기하고 있는 함수를 가져와 실행한다.
+이후 마이크로태스크 큐가 비면 태스크 큐에 대기하고 있는 함수를 가져와 실행한다.
 
-반대로, 이벤트 루프는 매크로 태스크 큐에 있는 것을 실행시키기 시작할 때 있는 매크로 태스크만 실행시킨다. 매크로 태스크가 추가한 매크로 태스크는 다음 이벤트 루프가 실행될 때까지 실행되지 않는다.
+microtask queue 👉 Promise
+task queue, macrotask queue 👉 setTimeout, setInterval
+
 ### 마이크로 태스크 큐 & 매크로 태스크 큐
 태스크 큐는 구체적으로 마이크로 태스크큐(Event Queue) 와 매크로 태스크큐(Job Queue) 로 나뉘어진다.
 
@@ -83,4 +87,5 @@ API에 따라 마이크로 태스크 큐를 사용하거나, 매크로 태스크
 참고:  
 https://ko.javascript.info/event-loop  
 https://poiemaweb.com/js-event  
-https://velog.io/@yejineee/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84%EC%99%80-%ED%83%9C%EC%8A%A4%ED%81%AC-%ED%81%90-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C-%ED%83%9C%EC%8A%A4%ED%81%AC-%EB%A7%A4%ED%81%AC%EB%A1%9C-%ED%83%9C%EC%8A%A4%ED%81%AC-g6f0joxx
+https://velog.io/@yejineee/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84%EC%99%80-%ED%83%9C%EC%8A%A4%ED%81%AC-%ED%81%90-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C-%ED%83%9C%EC%8A%A4%ED%81%AC-%EB%A7%A4%ED%81%AC%EB%A1%9C-%ED%83%9C%EC%8A%A4%ED%81%AC-g6f0joxx  
+https://velog.io/@minyoung22222/%ED%83%9C%EC%8A%A4%ED%81%AC-%ED%81%90%EB%A7%A4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC-%ED%81%90-VS-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%83%9C%EC%8A%A4%ED%81%AC-%ED%81%90
