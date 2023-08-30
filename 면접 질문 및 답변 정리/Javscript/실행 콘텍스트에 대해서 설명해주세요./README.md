@@ -28,3 +28,8 @@
     1. 함수 환경 레코드 생성
     2. this 바인딩
     3. 외부 렉시컬 환경에 대한 참조
+
+
+  
+참고:
+https://chinggin.tistory.com/642
