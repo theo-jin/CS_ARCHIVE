@@ -14,6 +14,8 @@ Cross-Cutting concern은 어떤 것을 가로지르는 관심사라 하여 횡�
 고차 컴포넌트도 컴포넌트이기 때문에 유의사항은 같다. 클래스 컴포넌트의 렌더함수나 함수 컴포넌트 본체 안에서 고차 컴포넌트를 만들면 안된다.  
 바깥 블록에서 딱 한 번만 호출해서 컴포넌트를 정의해야한다.
 
-  참고:
-  https://ko.legacy.reactjs.org/docs/higher-order-components.html
+  참고:  
+  
+https://ko.legacy.reactjs.org/docs/higher-order-components.html  
+  
 https://jeonghwan-kim.github.io/2022/05/28/react-high-order-component
