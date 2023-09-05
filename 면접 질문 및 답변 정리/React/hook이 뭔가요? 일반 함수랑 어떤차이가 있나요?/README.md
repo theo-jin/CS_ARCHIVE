@@ -26,3 +26,7 @@ Hooks의 규칙 중 하나는 "Hooks는 최상위 레벨에서만 호출해야 �
 리액트는 Hooks가 호출되는 순서를 매 렌더링에서 동일하게 유지하는 방식으로, 각각의 Hook에 대한 상태를 추적하고 관리합니다.  
 따라서, Hooks의 호출이 조건부이거나 루프 내부에서 발생하면, 이러한 호출 순서는 렌더링 간에 일관성이 유지되지 않을 수 있습니다.  
 이로 인해 상태가 예상치 못한 방식으로 업데이트될 수 있습니다.
+
+
+출처:  
+https://velog.io/@dev_seongjoo/React-hook%EC%9D%98-%EC%9E%A5%EC%A0%90%EA%B3%BC-React-hook-%EA%B3%BC-%EC%9D%BC%EB%B0%98-%ED%95%A8%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%97%90-%EB%8C%80%ED%95%B4-%EB%A7%90%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94
