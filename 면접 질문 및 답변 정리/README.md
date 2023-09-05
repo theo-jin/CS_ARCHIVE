@@ -21,8 +21,8 @@
 
 ## CS  
 #### [크로스 브라우징이란?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%ED%81%AC%EB%A1%9C%EC%8A%A4%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95%EC%9D%B4%EB%9E%80%3F)  
-#### REST API에 대해 설명해주세요.
-#### CSR 과 SSR   
+#### [REST API에 대해 설명해주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/REST%20API%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.)
+#### [CSR 과 SSR](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/CSR%20%EA%B3%BC%20SSR)   
 #### 번들러와 트랜스파일러   
 #### TCP와 UDP   
 #### URL, URN, URI
