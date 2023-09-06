@@ -5,7 +5,7 @@
 #### [실행 콘텍스트에 대해서 설명해주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%EC%8B%A4%ED%96%89%20%EC%BD%98%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.)
 #### [이벤트 루프와 태스크 큐에 대해 설명해주세요](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84%EC%99%80%20%ED%83%9C%EC%8A%A4%ED%81%AC%20%ED%81%90%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94)
 #### [이벤트 위임에 대해서 설명해 주세요](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94)
-#### this에 대해 설명해 주세요.  
+#### [this에 대해 설명해 주세요.](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/this%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94./README.md)  
 #### 함수 선언식과 표현식의 차이점이 무엇인가요?
 
 ## React
