@@ -7,6 +7,8 @@
 #### [이벤트 위임에 대해서 설명해 주세요](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%9C%84%EC%9E%84%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94)
 #### [this에 대해 설명해 주세요.](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/this%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94./README.md)  
 #### 함수 선언식과 표현식의 차이점이 무엇인가요?
+#### 함수형 프로그래밍에 대해 설명해주세요.
+
 
 ## React
 #### [리액트를 사용해야하는 이유](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/React/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0)
@@ -26,6 +28,11 @@
 #### [번들러와 트랜스파일러](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%EB%AA%A8%EB%93%88%20%EB%B2%88%EB%93%A4%EB%9F%AC%EC%99%80%20%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8C%8C%EC%9D%BC%EB%9F%AC  )
 #### TCP와 UDP   
 #### [URL, URN, URI](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/URL,%20URN,%20URI)
+#### 프로세스와 스레드는 어떤 차이가 있나요?
+#### HTTP 헤더의 종류에 대해 말씀해주세요
+#### CORS가 무엇이고 겪어봤다면 어떻게 해결하셨는지 설명해 주세요.
+#### 브라우저의 렌더링 과정(CRP)에 대해 설명해 주세요.
+#### 쿠키와 세션에 대해 말해주세요.
 
 
 ## 자료구조
