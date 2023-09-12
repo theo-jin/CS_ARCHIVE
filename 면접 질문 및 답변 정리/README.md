@@ -8,6 +8,8 @@
 #### [this에 대해 설명해 주세요.](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/this%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94./README.md)  
 #### 함수 선언식과 표현식의 차이점이 무엇인가요?
 #### 함수형 프로그래밍에 대해 설명해주세요.
+#### == 과 === 의 차이가 무엇인가요?
+#### 깊은 복사와 얕은 복사에 대해 설명해주세요.
 
 
 ## React
