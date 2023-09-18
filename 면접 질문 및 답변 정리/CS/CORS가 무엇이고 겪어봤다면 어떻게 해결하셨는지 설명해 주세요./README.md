@@ -38,3 +38,19 @@ Access-Control-Allow-Origin:특정주소
 브라우저에서 보낸 요청을 프론트엔드에서 받아서 대신 보내는 방법이다.
 
 nextjs의 경우에는 next.config.js 라는 파일을 이용해 상대 주소에 대해서는 미리 요청하는 주소를 바꿔줄 수 있다. 이외에도 nginx를 이용해서 프록시를 대신 구현할 수 있다. react에서도 proxy를 사용해서 해결 할 수 있다.
+
+
+## 프리플라이트란?
+"preflighted" request는  "simple requests" 와는 달리, 먼저 OPTIONS 메서드를 통해 다른 도메인의 리소스로 HTTP 요청을 보내 실제 요청이 전송하기에 안전한지 확인합니다. cross-origin 요청은 유저 데이터에 영향을 줄 수 있기 때문에 이와같이 미리 전송(preflighted)합니다.
+
+다음은 preflighted 할 요청의 예제입니다.
+
+```
+const xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://bar.other/resources/post-here/');
+xhr.setRequestHeader('Ping-Other', 'pingpong');
+xhr.setRequestHeader('Content-Type', 'application/xml');
+xhr.onreadystatechange = handler;
+xhr.send('<person><name>Arun</name></person>');
+```
+위의 예제는 POST 요청과 함께 함께 보낼 XML body를 만듭니다. 또한 비표준 HTTP Ping-Other 요청 헤더가 설정됩니다. 이러한 헤더는 HTTP/1.1의 일부가 아니지만 일반적으로 웹 응용 프로그램에 유용합니다. Content-Type 이 application/xml이고, 사용자 정의 헤더가 설정되었기 때문에 이 요청은 preflighted 처리됩니다.
