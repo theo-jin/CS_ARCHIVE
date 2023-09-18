@@ -43,6 +43,6 @@
 #### 프록시에 대해 설명해주세요.
 #### NAT에 대해 설명해주세요.
 #### DNS lookup 과정에 대해 설명해 주세요.
-#### 웹사이트 성능 최적화에는 어떤 방법이 있나요?
-#### TDD란?
+#### [웹사이트 성능 최적화에는 어떤 방법이 있나요?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%97%90%EB%8A%94%20%EC%96%B4%EB%96%A4%20%EB%B0%A9%EB%B2%95%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94%3F)
+#### [TDD란?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/TDD%EB%9E%80%3F)
 ## 자료구조
