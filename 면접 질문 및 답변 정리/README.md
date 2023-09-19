@@ -10,11 +10,11 @@
 #### [함수형 프로그래밍에 대해 설명해주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.)
 #### [== 과 === 의 차이가 무엇인가요?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%3D%3D%20%EA%B3%BC%20%3D%3D%3D%20%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94%3F)
 #### [깊은 복사와 얕은 복사에 대해 설명해주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%EA%B9%8A%EC%9D%80%20%EB%B3%B5%EC%82%AC%EC%99%80%20%EC%96%95%EC%9D%80%20%EB%B3%B5%EC%82%AC%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.)
-#### requestAnimationFrame이 무엇인가요?
-#### 빌트인 객체가 뭔가요? 종류는 어떤게 있죠  
+#### [requestAnimationFrame이 무엇인가요?](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/requestAnimationFrame%EC%9D%B4%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94/README.md)
+#### [빌트인 객체가 뭔가요? 종류는 어떤게 있죠](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Javscript/%EB%B9%8C%ED%8A%B8%EC%9D%B8%20%EA%B0%9D%EC%B2%B4%EA%B0%80%20%EB%AD%94%EA%B0%80%EC%9A%94%20%EC%A2%85%EB%A5%98%EB%8A%94%20%EC%96%B4%EB%96%A4%EA%B2%8C%20%EC%9E%88%EC%A3%A0/README.md)  
 
 ## Typescript  
-#### 타입스크립트에서 unknown, void, never, any에 대해 설명해 주세요.
+#### [타입스크립트에서 unknown, void, never, any에 대해 설명해 주세요.](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/Typescript/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%97%90%EC%84%9C%20unknown%20void%20never%20any%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94/README.md)
 
 
 ## React
@@ -40,9 +40,9 @@
 #### [CORS가 무엇이고 겪어봤다면 어떻게 해결하셨는지 설명해 주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/CORS%EA%B0%80%20%EB%AC%B4%EC%97%87%EC%9D%B4%EA%B3%A0%20%EA%B2%AA%EC%96%B4%EB%B4%A4%EB%8B%A4%EB%A9%B4%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%ED%95%B4%EA%B2%B0%ED%95%98%EC%85%A8%EB%8A%94%EC%A7%80%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.)
 #### [브라우저의 렌더링 과정(CRP)에 대해 설명해 주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EA%B3%BC%EC%A0%95(CRP)%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.)
 #### [쿠키와 세션에 대해 말해주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98%EC%97%90%20%EB%8C%80%ED%95%B4%20%EB%A7%90%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.)
-#### 프록시에 대해 설명해주세요.
-#### NAT에 대해 설명해주세요.
-#### DNS lookup 과정에 대해 설명해 주세요.
-#### [웹사이트 성능 최적화에는 어떤 방법이 있나요?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%97%90%EB%8A%94%20%EC%96%B4%EB%96%A4%20%EB%B0%A9%EB%B2%95%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94%3F)
-#### [TDD란?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/TDD%EB%9E%80%3F)
+#### [프록시에 대해 설명해주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%ED%94%84%EB%A1%9D%EC%8B%9C%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94)
+#### [NAT에 대해 설명해주세요.](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/NAT%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94/README.md)
+#### [DNS lookup 과정에 대해 설명해 주세요.](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/DNS%20lookup%20%EA%B3%BC%EC%A0%95%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94/README.md)
+#### [웹사이트 성능 최적화에는 어떤 방법이 있나요?](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%97%90%EB%8A%94%20%EC%96%B4%EB%96%A4%20%EB%B0%A9%EB%B2%95%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94/README.md)
+#### [TDD란?](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/TDD%EB%9E%80/README.md)
 ## 자료구조
