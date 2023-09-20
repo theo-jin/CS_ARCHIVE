@@ -21,6 +21,7 @@ DNS는 아래 세가지 요소로 구성되어있다.
 - 리졸버는 단말에 구현하는 것은 무리수라 보통은 리졸버가 구현된 네임 서버의 IP 주소만을 파악한다.
 대표적인 것이 KT/LG/SK와 같은 ISP(통신사) DNS 있고, 브라우저 우회 용도로 많이 쓰는 구글 DNS, 클라우드플레어와 같은 Public DNS 서버가 있다.
 그래서 거의 Resolver = Recursive DNS Server = Local Server(of ISP) = Recursor
+
 💡 도메인은 domain name 과 subdomain, TLD로 구성된 host 를 의미한다.
 www (subdomain) + google (domain name) + com (TLD) = www.google.com
 
