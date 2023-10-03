@@ -134,3 +134,9 @@ let dispatch = useDispatch()
 button
 </button> 
 ```
+
+
+## redux state가 array/object인 경우 변경
+array/object 자료의 경우 state변경은 state를 직접 수정해도됨
+state를 직접 수정하는 문법을 사용해도 잘 변경되는 이유는
+Immer.js 라이브러리가 state 사본을 하나 더 생성해준 덕분인데 Redux 설치하면 함께 옴.
