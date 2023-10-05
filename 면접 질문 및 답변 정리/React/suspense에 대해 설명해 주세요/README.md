@@ -21,4 +21,12 @@ Suspense를 통해 REST API나 GraphQL을 호출하여 네트워크를 통해 �
 ```
  컴포넌트를 Suspense로 감싸주면 컴포넌트의 랜더링을 특정 작업 이후로 미루고, 그 작업이 끝날 때 까지는 fallback 속성으로 넘긴 컴포넌트를 대신 보여줄 수 있어요.
 
+
+ ### 3.suspense가 뭔가요? 
+Suspense는 아직 렌더링이 준비되지 않은 컴포넌트가 있을때 로딩 화면을 보여주고 로딩이 완료되면 해당 컴포넌트를 보여주는 React에 내장되어 있는 기능
+
+SPA(Single-Page-Application)의 단점은 한번에 사용하지 않는 모든 컴포넌트까지 불러오기 때문에 첫 화면이 렌더링 될때까지의 시간이 오래걸리는 것이다. React는 lazy를 통해 컴포넌트를 동적으로 import를 할 수 있기 때문에 이를 사용하면 초기 렌더링 지연시간을 어느정도 줄일 수 있다.
+const SomeComponent = React.lazy(() => import('./SomeComponent'));
+Router로 분기가 나누어진 컴포넌트들을 위 코드처럼 lazy를 통해 import하면 해당 path로 이동할때 컴포넌트를 불러오게 되는데 이 과정에서 로딩하는 시간이 생기게 된다. 이 로딩되는 시간동안 로딩 화면을 보여지도록 해주는 역할을 하는 것이 바로 Suspense 이다.
+
 https://www.daleseo.com/react-suspense/
