@@ -137,6 +137,43 @@ button
 
 
 ## redux state가 array/object인 경우 변경
-array/object 자료의 경우 state변경은 state를 직접 수정해도됨
-state를 직접 수정하는 문법을 사용해도 잘 변경되는 이유는
-Immer.js 라이브러리가 state 사본을 하나 더 생성해준 덕분인데 Redux 설치하면 함께 옴.
+array/object 자료의 경우 state변경은 return없이 state를 직접 수정해도 됨
+state를 직접 수정하는 문법을 사용해도 잘 변경되는 이유는 Immer.js 라이브러리가 state 사본을 하나 더 생성해준 덕분인데 Redux 설치하면 함께 옴.
+
+array/object 자료의 경우 state변경을 return없이 state를 직접 수정한 예시)
+```
+let user = createSlice({  //useState()같은 역할  
+    name: 'user',  //'state이름'
+    initialState: { name: 'kim', age: 20 },//초기 값
+    reducers: {
+        changeName(state) {
+            state.name = 'park'
+        },
+        increaseAge(state) {
+            state.age += 1;
+        }
+    }
+
+})
+```
+
+함수의 파라미터 활용한 예시
+```
+let user = createSlice({  //useState()같은 역할  
+    name: 'user',  //'state이름'
+    initialState: { name: 'kim', age: 20 },//초기 값
+    reducers: {
+        increaseAge(state,action) {
+          //state 변경함수를 action 많이 하는데, 그이유는 payload(화물)뿐만아니라, 액션에 대한 여러가지 정보가 있어서 그럼.
+            state.age += action.payload;  //파라미터자리에 넣은 자료들은 a.payload 하면 나온다.
+        }
+        
+    }
+
+})
+increase(10)
+
+increase(100)  //이런식으로 파라미터 입력하면 그 값으로 증가.
+
+
+```
