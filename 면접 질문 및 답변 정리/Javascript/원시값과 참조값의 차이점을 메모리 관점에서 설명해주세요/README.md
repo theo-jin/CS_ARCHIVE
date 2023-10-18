@@ -1,4 +1,16 @@
+
 # 원시값과 참조값(array, object)의 차이점을 메모리 관점에서 설명해주세요
+
+
+
+Mutable한 객체는 생성된 이후에 상태가 변경될 수 있는 객체이고, Immutable한 객체는 생성된 이후에 상태가 변경되지 않는 객체를 말한다. 자바스크립트에서 Object와 Array를 제외한 모든 타입은 Immutable한 타입이다.
+
+## Immutable (원시값)
+Immutable 객체는 내용이 변하지 않는 객체를 말한다. 객체는 다양한 이유로 불변적일 수 있는데, 예시로 아래와 같은 경우가 있다.자바스크립트의 7개 데이터 타입 원시타입: number, string, boolean, undefined, null, symbol
+
+## Mutable (참조 값)
+Mutable은 바뀔 수 있는 변수 타입을 말한다. Javascript에서는 object와 array만 Mutable한 타입이고, 원시 타입은 Immutable하다.
+
 
 const로 지정한 값은 변하지 않아야 하는데 오브젝트 경우 값이 변환된다. 이는 array와 object는 참조값이고 이를 제외한 number, string 등의 값들은 원시값이기 때문이다. 변수는 메모리 공간을 식별하기 위해 붙인 이름이고, 값은 변수에 저장된 데이터의 표현식이 평가되어 생성된 결과이다.
 
