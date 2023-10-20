@@ -4,6 +4,11 @@
 
 React 18 이전까지, React 이벤트 핸들러 내부에서 발생하는 업데이트만 배칭을 하였다. Promise, setTimeout, native 이벤트 핸들러, 그리고 여타 모든 이벤트 내부에서 발생하는 업데이트들은 React에서 배칭되지 않았다.  
 
+**Q.배칭의 단위는?**
+```
+
+```
+
 왜냐하면 이전에는 브라우저의 이벤트가 실행되는 중에만 Batching 작업을 수행했기 때문이다. 따라서 이벤트가 종료된 후에 실행되는 경우는 Batching 작업이 불가능했다.
 
 ## 리액트 18 부터 적용된 batching: Automatic Batching
@@ -77,5 +82,6 @@ function handleClick() {
 }
 ```
 ### Reference
-https://velog.io/@rookieand/React-18%EC%97%90%EC%84%9C-%EC%B6%94%EA%B0%80%EB%90%9C-Auto-Batching-%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80
+https://velog.io/@rookieand/React-18%EC%97%90%EC%84%9C-%EC%B6%94%EA%B0%80%EB%90%9C-Auto-Batching-%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80  
+
 https://immigration9.github.io/react/2021/06/12/automatic-batching-react.html

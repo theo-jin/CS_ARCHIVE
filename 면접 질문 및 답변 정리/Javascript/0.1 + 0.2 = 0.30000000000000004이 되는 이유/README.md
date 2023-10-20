@@ -26,6 +26,10 @@
 
 소수점 이하 굉장히 깊게 다룰 때, 그리고 굉장히 큰 숫자를 다룰 때는 bignumber.js 같은 오픈소스 라이브러리를 사용한다.그렇기 때문에 사실 실무에서는 이런현상 때문에 오류가 발생할 일은 거의 없습니다.
 
+## 해결하기 위한 외부 라이브러리
+**decimal.js**  
+    
+decimal.js는 JavaScript에서 사용할 수 있는 라이브러리로, 정밀한 십진수 연산을 수행할 수 있도록 설계되었습니다. 이 라이브러리는 부동 소수점 연산의 정확성 문제를 해결하고자 만들어졌으며, 일반적인 JavaScript 숫자 데이터 유형인 부동 소수점 숫자 (double-precision floating-point numbers)를 대신하여 정밀한 십진수 연산을 제공합니다.
 ## reference
 https://unpasoadelante.tistory.com/23  
 https://velog.io/@harimad/0.10.2-0.3-in-JS

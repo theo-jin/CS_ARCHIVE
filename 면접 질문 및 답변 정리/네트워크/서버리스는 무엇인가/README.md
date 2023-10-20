@@ -57,16 +57,7 @@ FaaS를 활용하면 개발자는 API를 통해 서버리스 애플리케이션�
 - IT 스택의 이러한 측면에 대한 제어 권한을 이전하면 벤더 종속성 문제도 발생할 수 있습니다. 제공업체를 변경하면 새로운 벤더 사양에 맞추기 위해 시스템을 업그레이드하는 비용이 발생할 수도 있습니다.
 
 
-
-
-
-
-
-
-
-
-
-
 ### Reference
-https://www.redhat.com/ko/topics/cloud-native-apps/what-is-serverless
-https://www.ibm.com/kr-ko/topics/serverless
+https://www.redhat.com/ko/topics/cloud-native-apps/what-is-serverless  
+
+https://www.ibm.com/kr-ko/topics/serverlessㅋ
