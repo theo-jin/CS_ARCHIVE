@@ -29,9 +29,11 @@
 #### [고차 컴포넌트(HOC)란? 사용해본 적 있는지?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/React/%EA%B3%A0%EC%B0%A8%20%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(HOC)%EB%9E%80%3F%20%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B8%20%EC%A0%81%20%EC%9E%88%EB%8A%94%EC%A7%80%3F)
 #### [props와 state에 대해 설명해주세요](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/React/props%EC%99%80%20state%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94)  
 #### [hook이 뭔가요? 일반 함수랑 어떤차이가 있나요?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/React/hook%EC%9D%B4%20%EB%AD%94%EA%B0%80%EC%9A%94%3F%20%EC%9D%BC%EB%B0%98%20%ED%95%A8%EC%88%98%EB%9E%91%20%EC%96%B4%EB%96%A4%EC%B0%A8%EC%9D%B4%EA%B0%80%20%EC%9E%88%EB%82%98%EC%9A%94%3F)
-
 #### [리액트 18버전부터 적용된 batching이 무엇인가요](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/React/%EB%A6%AC%EC%95%A1%ED%8A%B8%2018%EB%B2%84%EC%A0%84%EB%B6%80%ED%84%B0%20%EC%A0%81%EC%9A%A9%EB%90%9C%20batching%EC%9D%B4%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94)
+#### useRef의 타입에 따라 달라지는 사용법에 대해 설명해 주세요.
 
+## Next.js
+#### Next.js(App router)에서 클라이언트 컴포넌트 하위에 서버 컴포넌트를 사용하기 위해선 서버 컴포넌트를 클라이언트 컴포넌트의 props로 넘겨야 하는데 이 패턴이 가능한 이유가 무엇인가요?
 ## CS  
 #### [크로스 브라우징이란?](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%ED%81%AC%EB%A1%9C%EC%8A%A4%20%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95%EC%9D%B4%EB%9E%80%3F)  
 #### [REST API에 대해 설명해주세요.](https://github.com/theo-jin/CS_ARCHIVE/tree/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/REST%20API%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.)
@@ -50,3 +52,8 @@
 #### [웹사이트 성능 최적화에는 어떤 방법이 있나요?](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%97%90%EB%8A%94%20%EC%96%B4%EB%96%A4%20%EB%B0%A9%EB%B2%95%EC%9D%B4%20%EC%9E%88%EB%82%98%EC%9A%94/README.md)
 #### [TDD란?](https://github.com/theo-jin/CS_ARCHIVE/blob/main/%EB%A9%B4%EC%A0%91%20%EC%A7%88%EB%AC%B8%20%EB%B0%8F%20%EB%8B%B5%EB%B3%80%20%EC%A0%95%EB%A6%AC/CS/TDD%EB%9E%80/README.md)
 ## 자료구조
+
+
+## HTML & CSS
+#### flex 와 grid차이에 대해서 말씀해주세요
+#### position의 각 속성에 대해 설명해주세요. (static, relative, absolute, fixed, sticky)
