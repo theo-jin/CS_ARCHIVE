@@ -1,6 +1,6 @@
 # 브라우저의 렌더링 과정(CRP)에 대해 설명해 주세요.
 
-웹 브라우저에 URL을 입력하면 웹 서버라 불리는 프로그램이 웹 브라우저에 웹 페이지를 제공한다.  
+웹 브라우저에 URL을 입력하면 웹 서버에서 웹 브라우저에 웹 페이지를 제공한다.  
 웹 브라우저가 웹 서버에 연결하려면, 웹 서버가 실행중인 컴퓨터의 주소를 알아야 하는데, 이 주소를 IP 주소라 한다.   
 웹 브라우저와 웹 서버는 IP 주소를 이용하여 연결하기 때문에 도메인 이름을 IP 주소로 변환할 필요가 있는데, 이 때 사용하는 것이 바로 DNS(Domain Name Server)이다.  
 웹 브라우저에서 URL을 입력하면, 웹 브라우저는 도메인 이름에 해당하는 IP 주소를 DNS에 요청하고, DNS는 IP주소를 응답으로 제공한다.
@@ -55,4 +55,5 @@ CSS Recalculation할 때, CSS Rule에 따라 오른쪽 -> 좌쪽으로 매치시
 9) 일부 속성과 메서드는 자주 사용할 때 캐싱하자.
 사용한다는 이유만으로도 리플로우가 발생하는 속성과 메서드가 있기 때문
   
-https://velog.io/@young_pallete/Reflow-Repaint%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
+https://velog.io/@young_pallete/Reflow-Repaint%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90  
+https://velog.io/@zaman17/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%88%9C%EC%84%9C%EC%99%80-%EC%9B%90%EB%A6%AC
