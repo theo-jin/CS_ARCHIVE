@@ -13,7 +13,19 @@ concurrent mode를 사용하면, 이름처럼 여러 작업을 동시에 할 수
 
 concurrent mode를 사용하기 위해선 index에서 render 대신 createRoot를 사용하기만 하면 됨.
 
- Automatic Batching,Transitions,Suspense
+ Automatic Batching  
+배칭은 React가 더 나은 성능을 위해 여러 개의 state 업데이트를 하나의 리렌더링 (re-render)로 묶는 것을 의미한다.  
+
+ React 18 에서 제공하는 ReactDOM.createRoot 메서드를 기반으로 렌더링을 진행할 경우 모든 state update 작업(Promise, setTimeout, native 이벤트 핸들러, 그리고 여타 모든 이벤트 내부에서 발생하는 업데이트 포함)은 자동으로 Batching 처리된다. 이 기능을 Automatic Batching 이라고 한다.
+
+ 여러개의 state 업데이트마다 발생하는 불필요한 리렌더링을 막아주기 때문에 성능적 이점을 준다
+
+ 
+ 
+ Suspense  
+Suspense는 아직 렌더링이 준비되지 않은 컴포넌트가 있을때 로딩 화면을 보여주고 로딩이 완료되면 해당 컴포넌트를 보여주는 React에 내장되어 있는 기능
+
+Suspense는 컴포넌트의 랜더링을 어떤 작업이 끝날 때까지 잠시 중단시키고 다른 컴포넌트를 먼저 랜더링할 수 있습니다.  
 
 ## Q.동시성(Concurrency)과 비동기차이는?
 
