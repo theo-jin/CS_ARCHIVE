@@ -1,8 +1,6 @@
 # REST API에 대해 설명해주세요.
 RESTful API는 두 컴퓨터 시스템이 인터넷을 통해 정보를 안전하게 교환하기 위해 사용하는 인터페이스입니다.  
-RESTful API는 HTTP 프로토콜을 기반으로 하며, 클라이언트와 서버 사이의 통신을 위해 주로 JSON 형식을 사용합니다.     
-
-RESTful API를 사용했을 때 가지는 이점은 확장성, 유연성,독립성이 있습니다. 
+RESTful API는 HTTP 프로토콜을 기반으로 하며, 클라이언트와 서버 사이의 통신을 위해 주로 JSON 형식을 사용합니다.      
 RESTful API에서 자원(Resource)은 URI(Uniform Resource Identifier)로 표현되며, HTTP 메서드(GET, POST, PUT, DELETE)를 사용하여 CRUD 기능을 수행합니다.  
 각각의 HTTP 메서드는 자원에 대한 다음과 같은 작업을 수행합니다.  
 
@@ -11,6 +9,8 @@ RESTful API에서 자원(Resource)은 URI(Uniform Resource Identifier)로 표현
 •	POST: 새로운 자원을 생성합니다.  
 
 •	PUT: 기존 자원을 수정합니다.  
+
+•	PATCH: 리소스의 일부 수정합니다.
 
 •	DELETE: 자원을 삭제합니다.  
 
@@ -21,6 +21,7 @@ RESTful API는 간결하고 직관적인 인터페이스를 제공하여, 다양
 또한, RESTful API는 웹 개발의 기본 원칙을 따르기 때문에, 이를 이해하는 것이 비교적 쉽고, 구현하기도 간단합니다.   
 따라서, RESTful API는 현대적인 웹 어플리케이션에서 자주 사용되는 아키텍처 스타일 중 하나입니다.
 
+RESTful API를 사용했을 때 가지는 이점은 확장성, 유연성,독립성이 있습니다.
 ### 확장성
 
 REST API를 구현하는 시스템은 REST가 클라이언트-서버 상호 작용을 최적화하기 때문에 효율적으로 크기 조정할 수 있습니다. 무상태는 서버가 과거 클라이언트 요청 정보를 유지할 필요가 없기 때문에 서버 로드를 제거합니다. 잘 관리된 캐싱은 일부 클라이언트-서버 상호 작용을 부분적으로 또는 완전히 제거합니다. 이러한 모든 기능은 성능을 저하시키는 통신 병목 현상을 일으키지 않으면서 확장성을 지원합니다.
@@ -38,6 +39,7 @@ RESTful API에서 자원(Resource)은 URI(Uniform Resource Identifier)로 표현
 - GET: 자원을 조회합니다.
 - POST: 새로운 자원을 생성합니다.
 - PUT: 기존 자원을 수정합니다.
+- PATCH: 리소스의 일부 수정합니다.
 - DELETE: 자원을 삭제합니다.
 
 ### **REST의 장단점**
@@ -58,3 +60,6 @@ RESTful API에서 자원(Resource)은 URI(Uniform Resource Identifier)로 표현
 - HTTP Method 형태가 제한적이다.
 - 브라우저를 통해 테스트할 일이 많은 서비스라면 쉽게 고칠 수 있는 URL보다 Header 정보의 값을 처리해야 하므로 전문성이 요구된다.
 - 구형 브라우저에서 호환이 되지 않아 지원해주지 못하는 동작이 많다.(익스폴로어)
+
+
+## REST API URI를 설계하는 7가지 규칙

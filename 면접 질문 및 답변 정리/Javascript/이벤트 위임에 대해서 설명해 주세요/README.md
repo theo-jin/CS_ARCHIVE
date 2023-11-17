@@ -26,5 +26,22 @@
 
 ## 이벤트 버블링
 
-  참고
+한 요소에 이벤트가 발생하면, 이 요소에 할당된 핸들러가 동작하고, 이어서 부모 요소의 핸들러가 동작합니다. 가장 최상단의 조상 요소를 만날 때까지 이 과정이 반복되면서 요소 각각에 할당된 핸들러가 동작하는 것을 이벤트 버블링이라 함.
+
+## event.target
+이벤트가 발생한 가장 안쪽의 요소는 타깃(target) 요소라고 불리고, event.target을 사용해 접근할 수 있습니다.
+
+event.target과 this(=event.currentTarget)는 차이점
+
+- event.target은 실제 이벤트가 시작된 ‘타깃’ 요소입니다. 버블링이 진행되어도 변하지 않습니다.
+- this는 ‘현재’ 요소로, 현재 실행 중인 핸들러가 할당된 요소를 참조합니다.
+
+**Q.버블링 중단하기**
+A. 핸들러에게 이벤트를 완전히 처리하고 난 후 버블링을 중단하도록 명령가능한데, 
+이벤트 객체의 메서드인 event.stopPropagation()를 사용하면 된다.
+
+
+## Reference
   https://ko.javascript.info/event-delegation
+
+  https://ko.javascript.info/bubbling-and-capturing

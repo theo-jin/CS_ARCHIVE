@@ -35,6 +35,10 @@ Redux에서는 기본적으로 action 객체를 dispatch하여 특정 action을 
 즉 thunk 미들웨어에서는 action 안에 type과 payload 뿐만 아니라 API 요청이나 비동기 처리 로직도 들어갈 수 있다.기존의 동기적인 로직을 처리하는 방식과 크게 다르지 않게 비동기적인 로직을 처리할 수 있다.
 
 ## Redux-saga
+```
+보일러 플레이트,러닝커브가 있다. 
+
+```
 Redux-saga는 generator 기반으로 동작하는 middleware.
 Redux-saga는 제너레이터 함수 문법을 기반으로 비동기 작업을 관리한다. Redux-saga는 우리가 dispatch하는 action을 모니터링해서 그에 따라 필요한 작업을 따로 수행하는 방식으로 동작한다.
 
