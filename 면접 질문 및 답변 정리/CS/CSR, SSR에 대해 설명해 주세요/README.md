@@ -6,33 +6,21 @@
 ![image](https://github.com/theo-jin/CS_ARCHIVE/assets/83561523/9172f5a5-c6b5-477a-a1ea-af8063983320)
 
 
-
-
 1.  User가 Website 요청을 보냄.
-
 2. CDN이 HTML 파일과 JS로 접근할 수 있는 링크를 클라이언트로 보낸다.
-
+```
 CDN : aws의 cloudflare를 생각하면 됨. 엔드 유저의 요청에 '물리적'으로 가까운 서버에서 요청에 응답하는 방식
-
-3. 클라이언트는 HTML과 JS를 다운로드 받는다.(**이때 SSR과 달리 유저는 아무것도 볼 수 없다**
-
-.)
-
+```
+3. 클라이언트는 HTML과 JS를 다운로드 받는다.(**이때 SSR과 달리 유저는 아무것도 볼 수 없다**.)
 4. 브라우저가 자바스크립트를 다운받음.
-
-5. 다운이 완료된 JS가 실행된다. 데이터를 위한 API가 호출된다.
-
-(이때 유저들은 placeholder를 보게된다. )
-
+5. 다운이 완료된 JS가 실행된다. 데이터를 위한 API가 호출된다.(이때 유저들은 placeholder를 보게된다.)
 6. 서버가 API로부터의 요청에 응답한다.
-
 7. API로부터 받아온 data를 placeholder 자리에 넣어준다. 이제 페이지는 상호작용이 가능해진다.
 
 ## SSR
 
-Server Side Rendering의 약자
-
-말 그대로 서버쪽에서 렌더링 준비를 끝마친 상태로 클라이언트에 전달하는 방식이다.
+Server Side Rendering의 약자  
+말 그대로 서버쪽에서 렌더링 준비를 끝마친 상태로 클라이언트에 전달하는 방식.
 
 ![image](https://github.com/theo-jin/CS_ARCHIVE/assets/83561523/7861a566-02e8-406c-8ced-7594d715722c)
 
@@ -134,3 +122,7 @@ Time To View
 TTI  
 Time To Interact  
 사용자가 웹브라우저에서 인터랙션 할 수 있는 시점
+
+
+## Reference
+https://hanamon.kr/spa-mpa-ssr-csr-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EB%9C%BB%EC%A0%95%EB%A6%AC/

@@ -1,5 +1,6 @@
 
-# Position & Display
+# Position & Display  
+
 ## position의 각 속성에 대해 설명해주세요. (static, relative, absolute, fixed, sticky)
 
 position은 위치를 결정하는 속성.
