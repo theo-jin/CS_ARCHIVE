@@ -45,3 +45,10 @@ DOM이 생성되고 웹 브라우저상에 나타나는 것을 마운트(mount)�
 
 호출되는 메소드:
 - componentWillUnmount: 컴포넌트가 웹 브라우저상에서 사라지기 전에 호출하는 메서드입니다.
+
+
+```
+useEffect(() => {}, []) // ComponetDidMount
+useEffect(() => {}, [a, b]) // ComponentDidUpdate
+useEffect(() => {return () => {}}) // ComponentWillUnmount 컴포넌트가 언마운트 되기 직전에 실행됨
+```
