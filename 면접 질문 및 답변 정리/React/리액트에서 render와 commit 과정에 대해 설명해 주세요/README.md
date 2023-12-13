@@ -1,5 +1,9 @@
 # Render and Commit
 
+렌더링 단계는 특정 환경(예를 들어, DOM과 같이)에 어떤 변화가 필요한 지 결정하는 단계입니다. 이 과정에서 React는 render를 호출하여 이전 렌더와 결과값을 비교합니다.
+
+커밋 단계는 React가 변경 사항을 반영하는 단계입니다(React DOM의 경우 React가 DOM 노드를 추가, 변경 및 제거하는 단계를 말합니다). 이 단계에서 React는 componentDidMount 나 componentDidUpdate 와 같은 생명주기 메서드를 호출합니다.
+
 **Render and Commit과정은 먼저 세단계로 진행된다.** 
 1. 렌더링 촉발 Triggering a render
 2. 컴포넌트 렌더링 Rendering the component
@@ -27,6 +31,9 @@ Render phase에서 컴포넌트가 변경되어야 한다고 React에서 계산�
 
 ### Brower Paint
 렌더링이 완료되고 React가 DOM을 업데이트한 후 브라우저는 화면을 다시 그립니다. 이 단계를 "브라우저 렌더링"이라고 하지만 이 문서의 나머지 부분에서 혼동을 피하고자 "페인팅"이라고 부를 것입니다.
+
+
+
 
 ## Reference
 https://react-ko.dev/learn/render-and-commit  

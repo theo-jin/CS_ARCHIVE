@@ -23,7 +23,7 @@ console.log(one, two, three); // 1 2 3
 
 ```
 const [x,...y]=[1,2,3];
-consoel.lg(x,y); // 1 [2,3]
+consoel.log(x,y); // 1 [2,3]
 ```
 
 ## 2.객체 디스럭쳐링 할당.  
