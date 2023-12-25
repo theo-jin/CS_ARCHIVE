@@ -54,12 +54,14 @@ SCSS = Sassy CSS
 - 한 줄로 인라인 코드를 작성할 수 있고, CSS와 유사한 문법을 가지기 때문에 코드 통합이 훨씬 쉽습니다.
 - CSS 구문과 완전히 호환되도록 새로운 구문을 도입해 만든 Sass의 모든 기능을 지원하는 CSS의 상위집합이다.
 즉, CSS와 거와 거의 같은 문법으로 Sass 기능을 지원한다.
+
 ## CSS-in-JS vs CSS-in-CSS
 Styled Components에 비해서  CSS 파일이 추출되는 CSS 모듈 방식은 자바스크립트 해석 과정이 따로 없기 때문에 페이지가 훨씬 빨리 전환됩니다.
 
 
 ## 정리
 작업자의 성향이나 판단이 필요한 부분이나 개발 효율성에 중점을 둔 컴포넌트 위주의 프로젝트라면 CSS-in-JS를 고려하는 것이 좋습니다. 필요한 컴포넌트 페이지의 CSS 스타일 요소만 로딩하기 때문입니다. 반면 사용자 편의에 방점을 둔 인터렉티브한 웹 프로젝트라면 랜더링 시 모든 CSS 스타일 요소를 로딩하는 CSS-in-CSS 방식을 권장
+
 ## Reference
 https://www.samsungsds.com/kr/insights/web_component.html  
 https://velog.io/@gygy/Sass-css-in-js-css-module#css-preprocessor
