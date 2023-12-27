@@ -16,8 +16,10 @@ input, textarea, select등 입력 폼 요소의 value 속성을 지정하여 값
 비제어 컴포넌트는 DOM에 신뢰 가능한 출처를 유지하므로 비제어 컴포넌트를 사용할 때 React와 non-React 코드를 통합하는 것이 쉬울 수 있습니다. 빠르고 간편하게 적은 코드를 작성할 수 있지만, 그 외에는 일반적으로 제어된 컴포넌트를 사용해야 합니다.
 
 ## 제어 컴포넌트는 되고 비제어 컴포넌트는 안되는 것들
-![Alt text](image.png)
+![Alt text](image.png)  
 
+- 즉각적으로, 실시간으로 값에 대한 피드백이 필요하다 > 제어 컴포넌트 사용  
+- 즉각적인 피드백이 불필요하고 제출시에만 값이 필요하다, 불필요한 렌더링과 값 동기화가 싫다 > 비제어 컴포넌트 사용
 
 ## Reference
 https://ko.legacy.reactjs.org/docs/uncontrolled-components.html  

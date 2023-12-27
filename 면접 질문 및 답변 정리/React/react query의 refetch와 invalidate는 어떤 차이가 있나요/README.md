@@ -7,7 +7,6 @@ refetch 는 enabled 옵션과 상관없이 무조건 queryFn을 수행한다.
 하지만, invalidateQueries 는 data 가 있는 컴포넌트를 볼때만 리패치를 수행하므로, 백그라운드 리패치를 통해서 조금 더 매끄러운 UI 를 제공하려면 refetch 를 사용할 수 있겠다.
 
 
-
 ## refetch
 - refetch 메소드는 항상 데이터를 다시 가져와서 갱신합니다.
 - 쿼리에 대한 옵저버가 없어도 리페칭한다.
