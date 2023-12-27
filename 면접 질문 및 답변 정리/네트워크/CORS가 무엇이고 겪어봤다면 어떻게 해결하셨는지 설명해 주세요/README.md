@@ -45,7 +45,7 @@ nextjs의 경우에는 next.config.js 라는 파일을 이용해 상대 주소�
 
 다음은 preflighted 할 요청의 예제입니다.
 
-```
+```ts
 const xhr = new XMLHttpRequest();
 xhr.open('POST', 'https://bar.other/resources/post-here/');
 xhr.setRequestHeader('Ping-Other', 'pingpong');
