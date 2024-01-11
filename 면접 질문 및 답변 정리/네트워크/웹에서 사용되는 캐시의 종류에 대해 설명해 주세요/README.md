@@ -44,5 +44,6 @@
 CDN은 하나의 커다란 공유 캐시와 같다. 다수의 실 서버가 갖고 있는 데이터를 캐시하여 클라이언트에게 제공한다.
 
 ## Reference
-https://hahahoho5915.tistory.com/33
+https://hahahoho5915.tistory.com/33  
+
 https://guiyomi.tistory.com/130

@@ -1,10 +1,5 @@
-# 호이스팅 
+# 호이스팅 일어나는 이유
 
-정의: 자바스크립트 호이스팅은 인터프리터가 코드를 실행하기 전에 함수, 변수, 클래스 또는 임포트(import)의 선언문을 해당 범위의 맨 위로 이동시키는 과정
-
-호이스팅(Hoisting)이란, var 선언문이나 function 선언문 등을 해당 스코프의 선두로 옮긴 것처럼 동작하는 특성을 말한다.
-
-호이스팅이란 함수 내부에 있는 선언들을 모두 끌어올려 해당 함수 유효 범위의 최상단에 선언하는 것을 뜻함. (실제로 코드가 끌어올려지는 것이 아닌, 자바스크립트 Parser가 함수 실행 전 해당 함수를 한 번 훑는 과정에서 내부적으로 끌어올려 처리하는 것을 뜻하며 실제 메모리에서는 변화가 없음) => 미리 선언문을 실행해둔다고 이해하면 됨.
 
 ## var, let, const
 var, let, const의 차이는 무엇인가요?
@@ -14,18 +9,7 @@ const : 중복 선언 불가능, 재할당 불가능
 
 
 ## 일시적 사각지대 ( Temporal Dead Zone(TDZ))는 무엇인가요?
-선언 전에 변수를 사용하는 것을 비 허용하는 개념상의 공간입니다.
-스코프의 시작 지점부터 초기화 시작 지점까지의 구간을 ‘일시적 사각지대(Temporal Dead Zone; TDZ)’라고 부른다.
-
-  호이스팅은 함수 안에 있는 선언들을 모두 끌어 올려 해당 함수 유효 범위의 최상단에 선언하는 것을 말합니다.
-
-TDZ는 const, let, class는 TDZ에 영향을 받습니다. 즉 const, let, class는 선언 전에 변수를 사용하는것을 허용하지 않습니다.
-
-반대로 var, function, import의 선언은 TDZ의 영향을 받지 않습니다. 특히 var 변수는 선언 전에도 사용할 수 있는 점에서 var 변수 사용을 피해 예기치 못한 오류를 방지하는 것이 좋습니다.
-
-변수가 먼저 선언이 된 경우, 초기화에 따라서 TDZ가 생깁니다. 특히 let,const와 var는 초기화 시점이 다릅니다. var는 암묵적으로 undefined로 초기화 된 상태에서 자바스크립트 코드를 읽기 때문에, TDZ에서 에러가 나지 않습니다.
-
-TDZ를 통해 스코프와, 호이스팅을 살펴보고 어떤식으로 TDZ와 호이스팅이 연관되어 있는지 알아 볼 수 있는 좋은 개념이였습니다.
   
-   https://velog.io/@jangwonyoon/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EA%B3%BC-TDZ%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B4%EA%B3%A0-%EC%96%B4%EB%96%A4-%EC%97%B0%EA%B4%80%EC%9D%B4-%EC%9E%88%EC%9D%84%EA%B9%8C%EC%9A%94
-  https://developer.mozilla.org/ko/docs/Glossary/Hoisting
+https://velog.io/@jangwonyoon/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EA%B3%BC-TDZ%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B4%EA%B3%A0-%EC%96%B4%EB%96%A4-%EC%97%B0%EA%B4%80%EC%9D%B4-%EC%9E%88%EC%9D%84%EA%B9%8C%EC%9A%94
+  
+https://developer.mozilla.org/ko/docs/Glossary/Hoisting
