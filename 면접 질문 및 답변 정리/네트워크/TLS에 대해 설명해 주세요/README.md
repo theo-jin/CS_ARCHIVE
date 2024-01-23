@@ -38,6 +38,7 @@ TLS 연결은 TLS Handshake로 알려진 일련의 순서를 사용하여 초기
 
 ## TLS와 SSL의 차이점
 TLS는 SSL(Secure Sockets Layer)이라고 불리는 이전의 암호화 프로토콜에서 발전한 것
+![Alt text](image-1.png)
 ## TLS와 HTTPS의 차이점
 HTTPS는 HTTP 프로토콜 상위에서 TLS 암호화를 구현한 것으로 모든 웹 사이트와 다른 웹 서비스에서 사용됩니다. 따라서 HTTPS를 사용하는 웹 사이트는 TLS 암호화를 이용
 
