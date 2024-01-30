@@ -29,12 +29,18 @@ Pre-Rendering하면 HTML document가 생성되고, 이 파일을 클라이언트
 
 ## next hydration
 Next.js는 모든 페이지를 미리 렌더링(pre-render)한다. 서버에서 HTML을 문자열로 가져온 후에, 클라이언트에서 서버에서 보내준 HTML을 hydrate() 혹은 render()하여 브라우저에 렌더링된다
+
 Next.js는 서버에서 보여줄 HTML 컨텐츠를 가져오기 때문에 재차 render() 함수로 HTML을 생성하여 DOM을 그리는 일은 비효율적이다. 
+
 따라서 hydrate() 함수로 서버에서 받아온 HTML에 유저가 상호작용할 수 있는 이벤트 리스너만 연결한다.
 Next.js가 모든 일을 클라이언트 측에서 모든 작업을 수행하는 것이 아니라, 각 페이지의 HTML을 미리 생성하는 것이다. 
+
 생성된 HTML은 해당 페이지에 필요한 최소한의 자바스크립트 코드와 연결된다. 
 그 후 브라우저에 의해 페이지가 로드되면, 자바스크립트 코드가 실행되어 페이지와 유저가 상호작용할 수 있게 된다.
 
 Next.js에서 미리 렌더링 하는 방식은 두 가지로 나뉘며, HTML이 생성되는 시점이 다르다. 
 하나는 빌드 타임에 HTML에 생성되어 매 요청마다 이를 재사용하게 해주는 SSG(Static-site Generation)이고, 
 다른 하나는 매 요청마다 HTML을 생성하는 SSR(Server-side Rendering)이다.  
+
+
+## Hydration missmatch

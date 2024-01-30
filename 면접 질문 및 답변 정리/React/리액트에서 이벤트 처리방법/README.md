@@ -34,14 +34,17 @@ form의 onSubmit으로 이벤트를 수행하면 바로 새로운 페이지로 �
 e.preventDefault()는 고유 동작을 중단시키고,
 e.stopPropagation()은 상위 엘리먼트들로의 이벤트 전파를 중단시킵니다
 ```
-리액트 이벤트 처리 방식이 전통적인 방식과 다른 이유
+## 리액트 이벤트 처리 방식이 전통적인 방식과 다른 이유
 
 **브라우저 호환성**
+
 낮은 버전의 브라우저의 경우 이벤트 처리가 일관되게 작동하지 않을 수 있다. 때문에 리액트는 기존 이벤트 객체를 SyntheticEvent로 래핑함으로써 호환되지 않는 환경에서도 이벤트 처리를 동일한 방법으로 할 수 있게 한다.
+
 **성능 향상**
 - 이벤트 핸들러는 많으면 많을 수록 많은 메모리를 차지한다.
 - 리액트는 DOM 엘리먼트에 직접 이벤트 핸들러를 부착하지 않는다. 리액트는 문서 최상위에 있는 하나의 이벤트 핸들럴르 사용한다. 이 핸들러는 모든 이벤트를 리스닝하며, 이벤트 발생 시 적합한 개별 핸들러를 호출하는 역할을 한다.
 이는 이벤트 처리 코드를 개발자가 직접 최적화 하지 않아도 되게 해준다.
+
 https://ko.legacy.reactjs.org/docs/handling-events.html
 https://velog.io/@yoonvelog/React-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%B2%98%EB%A6%AC
 https://velog.io/@gyumin_2/React.js-%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0
