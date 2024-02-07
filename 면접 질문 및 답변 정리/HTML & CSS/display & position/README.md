@@ -22,7 +22,7 @@ position이 static인 상태에는
 top, left, left, right, z-index를 지정해도 위치가 변경되지 않는다.
 
 #### position: relative
-relative는 현재 위치를 기준으로 상대 위치를 지정하게 해준다.
+relative는 현재 위치(static)를 기준으로 상대 위치를 지정하게 해준다.
 relative는 요소 자기 자신의 원래 위치가 기준점이 됨
 
 ```
@@ -46,7 +46,10 @@ absolute의 특징 정리
 ```
 #### position: fixed
 fixed는 브라우저 화면(윈도우)을 기준으로 요소를 정해진 위치에 고정(fix)시킬 수 있다.
+fixed는 브라우저 화면이 기준점이 된다
 
+fixed는 이름 그대로 요소를 지정한 위치에 고정(fix)시켜주기 때문에
+스크롤을 해도 .btn-top 버튼이 지정된 위치에 그대로 자리하고 있다
 ```
 fixed의 특징 정리
 
@@ -58,6 +61,8 @@ z-index의 지정이 가능하다.
 
 #### position: sticky
 sticky는 요소가 지정된 기준점(top, left, left, right 등으로 설정해둔 위치)에 도달했을 때, 그 기준점에 요소를 고정(fix)시켜준다.
+
+
 
 ```
 sticky의 특징 정리
