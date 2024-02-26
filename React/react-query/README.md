@@ -8,7 +8,7 @@ npm install @tanstack/react-query
 ```
 
 2. index.js에 이거 설정해준다. 
-```
+```ts
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'  //1번
 const queryClient = new QueryClient()   //2번
 
@@ -24,11 +24,9 @@ root.render(
 ); 
 ```
 3. 컴포넌트에서 react-query로 ajax요청 
-```
+```ts
 import { useQuery } from '@tanstack/react-query';
-```
 
-```
 function App(){
   let result = useQuery(['작명'], ()=>
     axios.get('주소')

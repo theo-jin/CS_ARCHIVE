@@ -54,3 +54,41 @@ useEffect(() => {}, []) // ComponetDidMount
 useEffect(() => {}, [a, b]) // ComponentDidUpdate
 useEffect(() => {return () => {}}) // ComponentWillUnmount 컴포넌트가 언마운트 되기 직전에 실행됨
 ```
+
+
+```ts
+function SomeComponent() {
+  const [count, setCount] = useState(0);
+
+  console.log("render");
+
+  useEffect(() => {
+    console.log("effect");
+
+    return () => {
+      console.log("clean up");
+    };
+  });
+
+  return (
+    <button
+      onClick={() => {
+        console.log("fire");
+        setCount(count + 1);
+      }}
+    >
+      count!
+    </button>
+  );
+}
+```
+1. 컴포넌트 첫 렌더 => 'render'
+2. 브라우저 레이아웃 및 페인트
+3. useEffect 실행 및 clean up 함수 반환 => 'effect'
+4. count! 버튼 클릭 => 'fire'
+5. onClick 실행
+6. setState 실행 및 리렌더 트리거
+7. 컴포넌트 리렌더
+8. 브라우저 레이아웃 및 페인트
+9. 3번에서 useEffect가 반환한 clean up 실행
+10. useEffect 실행 및 clean up 함수 반환
