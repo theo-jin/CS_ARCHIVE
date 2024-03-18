@@ -1,14 +1,5 @@
 # 정렬 알고리즘
-```
-거품 정렬(Bubble Sort)
-선택 정렬(Selection Sort)
-삽입 정렬(Insertion Sort)
-퀵 정렬(Quick Sort)
-병합 정렬(Merge Sort)
-힙 정렬(Heap Sort)
-계수 정렬(Counting Sort)
-기수 정렬(Radix sort)
-```
+
 ### Stable 정렬
 정렬을 했을 때 중복된 값들의 순서가 변하지 않는 것을 말합니다.
 
