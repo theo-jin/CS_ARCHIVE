@@ -39,7 +39,7 @@ queryKey 프로퍼티:useQuery를 사용할 때 모든 쿼리 전송하는 모�
 
 
 
-
+![alt text](image-1.png)
 ### data
 
 data 프로퍼티 실제 응답 데이터가 값으로 들어 있습니다

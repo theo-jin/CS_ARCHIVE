@@ -50,4 +50,5 @@ c. 최악 적합(Worst fit)
 ## Reference
 
 https://dheldh77.tistory.com/entry/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EC%A0%84%EB%9E%B5Memory-Management-Strategy
+
 https://so-kyte.tistory.com/130
