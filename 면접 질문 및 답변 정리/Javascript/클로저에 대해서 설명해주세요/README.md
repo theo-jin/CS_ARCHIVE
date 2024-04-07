@@ -47,6 +47,65 @@ useState 같은경우 내부적으로 클로저를 사용함.
 해결 방법
 클로저를 할당한 변수에 null을 할당해줌으로써 메모리를 해제시키는 방법이 있습니다.
 
+코드 질문 by 이춘구님
+
+```ts
+var a = 10;
+
+function f1() {
+  return function () {
+    console.log(a);
+  };
+  var a = 20;
+}
+
+var f2 = f1();
+f2(); // undefined
+// f1 함수 내부의 평가 단계에서 a는 undefined로 초기화되고 익명함수가 반환되면서 20이 할당되지 못한다.
+// 그래서 익명함수 내부의 a는 undefined가 된다.
+```
+
+```ts
+var a = 1;
+
+function f1() {
+  var b = 2;
+  function f2() {
+    console.log(a, b);
+  }
+
+  return f2;
+}
+
+var f2 = f1();
+var b = 3;
+
+function f3() {
+  var a = 5;
+  f2();
+}
+
+f3(); // 1 2
+// f3의 호출로 호출되는 함수는 f1 내부의 f2이다. 로컬 스코프부터 확장해나가며 a, b를 찾으면 a는 글로벌, b는 f1 내부이다
+```
+
+```ts
+const a = {};
+
+const func = (b) => {
+  b = b.a = 1;
+  // b = (b.a = 1) <= 연속 할당은 우측부터 결합되고 좌측부터 평가된다.
+  // a = { a: 1 } <= b가 참조하는 객체인 글로벌 a에 속성이 추가된다.
+  // b = 1 <= b.a = 1은 1을 반환하고 b에는 1이 재할당된다.
+  b.b = 2;
+  // 1.b = 2 <= 1은 객체가 아니므로 무시된다.
+};
+
+func(a);
+
+console.log(a); // { a: 1 }
+```
+
 ## Reference
 
 https://poiemaweb.com/js-closure
