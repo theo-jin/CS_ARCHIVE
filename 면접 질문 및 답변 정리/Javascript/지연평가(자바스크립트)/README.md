@@ -39,6 +39,8 @@ const result = _.chain(arr) // 일반배열을 lodash 체인 객체로 변환한
 console.log(result); // [11, 13]
 ```
 
+console.log() 도 지연평가이다. 
+
 ## Reference
 
 https://www.zerocho.com/category/JavaScript/post/5c0cb264f82a70001e47db0c
