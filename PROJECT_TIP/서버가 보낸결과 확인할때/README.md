@@ -1,4 +1,4 @@
-```
+```ts
 fetch('/URL')
 .then((r)=>r.json())
 .then((result)=>{ console.log(result) })
@@ -6,7 +6,7 @@ fetch('/URL')
 
 서버에서 보낸 결과가 object, array 자료면 이렇게 출력.
 
-```
+```ts
 fetch('/URL')
 .then((r)=>{
   if(r.status == 200) {
