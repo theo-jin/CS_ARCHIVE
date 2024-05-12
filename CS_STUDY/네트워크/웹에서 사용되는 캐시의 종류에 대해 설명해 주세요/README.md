@@ -59,3 +59,5 @@ https://hahahoho5915.tistory.com/33
 https://guiyomi.tistory.com/130
 
 https://yozm.wishket.com/magazine/detail/2341/
+
+https://developer.mozilla.org/ko/docs/Web/API/Cache

@@ -13,18 +13,22 @@ Tanstack 쿼리에는 HTTP 요청을 전송하는 로직이 내장돼 있지 않
 요청과 관련된 데이터와 발생 가능한 오류를 추적하는 역할 등을 한다.
 
 요청을 전송하는 코드는 직접 작성해야 한다.
+
 ```ts
-const {  data,  isPending,  isError,  error,} = 
-  useQuery({
-    queryKey: ["events"], //키는 배열이며, 문자열로 국한되지않음 객체를 사용하거나 중첩 배열이나  다른 종류의 값을 사용할 수도 있다.
-    queryFn: fetchEvents, // queryFn은 쿼리함수 의미
-    staleTime: 5000, //캐시에 데이터가 있을 때 업데이트된 데이터를 가져오기 위한 요청을 자체적으로 전송하기 전에 기다릴 시간을 설정
-    gcTime: 40000, //가비지 수집 시간을 의미. 데이터와 캐시를 얼마나 오랫동안 보관할지를 제어.기본값 5분
-  });
+const { data, isPending, isError, error } = useQuery({
+  queryKey: ['events'], //키는 배열이며, 문자열로 국한되지않음 객체를 사용하거나 중첩 배열이나  다른 종류의 값을 사용할 수도 있다.
+  queryFn: fetchEvents, // queryFn은 쿼리함수 의미
+  staleTime: 5000, //캐시에 데이터가 있을 때 업데이트된 데이터를 가져오기 위한 요청을 자체적으로 전송하기 전에 기다릴 시간을 설정
+  gcTime: 40000, //가비지 수집 시간을 의미. 데이터와 캐시를 얼마나 오랫동안 보관할지를 제어.기본값 5분
+});
 ```
+
 ### queryFn
+
 queryFn은 쿼리함수 의미
+
 ### queryKey
+
 queryKey 프로퍼티:useQuery를 사용할 때 모든 쿼리 전송하는 모든 fetch 요청
 
 즉, 전송하는 모든 GET HTTP 요청에는 쿼리 키가 있다.Tanstack 쿼리는 내부에서 이 쿼리 키를 이용해 요청으로 생성된 데이터를 캐시 처리한다
@@ -37,9 +41,8 @@ queryKey 프로퍼티:useQuery를 사용할 때 모든 쿼리 전송하는 모�
 
 키는 배열이며, 문자열로 국한되지않음 객체를 사용하거나 중첩 배열이나 다른 종류의 값을 사용할 수도 있다.
 
-
-
 ![alt text](image-1.png)
+
 ### data
 
 data 프로퍼티 실제 응답 데이터가 값으로 들어 있습니다
@@ -92,7 +95,7 @@ data 프로퍼티 실제 응답 데이터가 값으로 들어 있습니다
 사용 예시)
 
 ```ts
-staleTime: 5000
+staleTime: 5000;
 ```
 
 ### gcTime
@@ -102,5 +105,5 @@ staleTime: 5000
 사용 예시)
 
 ```ts
-gcTime: 40000
+gcTime: 40000;
 ```
