@@ -1,10 +1,11 @@
 # useRef란?
 
-```
-useRef는 .current 프로퍼티로 전달된 인자(initialValue)로 초기화된 변경 가능한 ref 객체를 반환합니다. 반환된 객체는 컴포넌트의 전 생애주기를 통해 유지될 것입니다.
-```
-
+useRef는 렌더링에 필요하지 않은 값을 참조할 수 있는 React Hook이다.
 useRef는 리액트 훅의 한 종류로, Ref는 reference(참조)의 줄임말이다.
+
+```
+useRef는 .current 프로퍼티로 전달된 인자(initialValue)로 초기화된 변경 가능한 ref 객체를 반환합니다. 반환된 객체는 컴포넌트의 전 생애주기를 통해 유지될 것이다.
+```
 
 useRef를 이용하면 특정한 DOM요소에 접근이 가능하면, 불필요한 재렌더링을 하지 않는다는 장점이 있다.
 
@@ -15,8 +16,12 @@ useRef를 이용하면 특정한 DOM요소에 접근이 가능하면, 불필요�
 ```ts
 //생성
 const 변수명 = useRef(initialValue);
+//initialValue: ref 객체의 current프로퍼티 초기 설정값입니다. 여기에는 어떤 유형의 값이든 지정할 수 있습니다. 이 인자는 초기 렌더링 이후부터는 무시됩니다.
 
 //반환요소에 접근
+//useRef는 단일 프로퍼티를 가진 객체를 반환합니다:
+
+// current: 처음에는 전달한 initialValue로 설정됩니다. 나중에 다른 값으로 바꿀 수 있습니다. ref 객체를 JSX 노드의 ref어트리뷰트로 React에 전달하면 React는 current프로퍼티를 설정합니다.
 <input ref={변수명} />;
 ```
 
@@ -29,7 +34,7 @@ useRef에서 기억할 것은 이러한 current라는 키값을 지닌 프로퍼
 ## 특징
 
 useRef는 React Hook의 일종으로, 인자로 넘어온 initialValue를 useRef 객체의 .current 프로퍼티에 저장한다.  
- 반환된 useRef 객체는 컴포넌트의 전생애주기를 통해 유지가
+ 반환된 useRef 객체는 컴포넌트의 전생애주기를 통해 유지가 된다.
 
 1. 컴포넌트가 계속해서 렌더링이 되어도 컴포넌트가 언마운드되기 전까지는 값을 그대로 유지할 수 있다
 
@@ -96,3 +101,5 @@ https://driip.me/7126d5d5-1937-44a8-98ed-f9065a7c35b5
 https://reactjs.winterlood.com/3cef124b-4664-40bc-8b13-1591c31b0e39
 
 https://hihiha2.tistory.com/19
+
+https://ko.react.dev/reference/react/useRef
