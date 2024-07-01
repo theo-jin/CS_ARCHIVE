@@ -5,12 +5,13 @@
 클라이언트는 그것을 받아 렌더링을 시작한다.
 ![image](https://github.com/theo-jin/CS_ARCHIVE/assets/83561523/9172f5a5-c6b5-477a-a1ea-af8063983320)
 
-
 1.  User가 Website 요청을 보냄.
-2. CDN이 HTML 파일과 JS로 접근할 수 있는 링크를 클라이언트로 보낸다.
+2.  CDN이 HTML 파일과 JS로 접근할 수 있는 링크를 클라이언트로 보낸다.
+
 ```
 CDN : aws의 cloudflare를 생각하면 됨. 엔드 유저의 요청에 '물리적'으로 가까운 서버에서 요청에 응답하는 방식
 ```
+
 3. 클라이언트는 HTML과 JS를 다운로드 받는다.(**이때 SSR과 달리 유저는 아무것도 볼 수 없다**.)
 4. 브라우저가 자바스크립트를 다운받음.
 5. 다운이 완료된 JS가 실행된다. 데이터를 위한 API가 호출된다.(이때 유저들은 placeholder를 보게된다.)
@@ -26,11 +27,11 @@ Server Side Rendering의 약자
 
 1. User가 Website 요청을 보냄.
 2. Server는 'Ready to Render'. 즉, 즉시 렌더링 가능한 html파일을 만든다.
-(리소스 체크, 컴파일 후 완성된 HTML 컨텐츠로 만든다.)
+   (리소스 체크, 컴파일 후 완성된 HTML 컨텐츠로 만든다.)
 3. 클라이언트에 전달되는 순간, 이미 렌더링 준비가 되어있기 때문에 HTML은 즉시 렌더링 된다.
-    
-    그러나 사이트 자체는 조작 불가능하다. (Javascript가 읽히기 전이다.)
-    
+
+   그러나 사이트 자체는 조작 불가능하다. (Javascript가 읽히기 전이다.)
+
 4. 클라이언트가 자바스크립트를 다운받는다.
 5. 다운 받아지고 있는 사이에 유저는 컨텐츠는 볼 수 있지만 사이트를 조작 할 수는 없다. 이때의 사용자 조작을 기억하고 있는다.
 6. 브라우저가 Javascript 프레임워크를 실행한다.
@@ -41,9 +42,7 @@ https://hahahoho5915.tistory.com/52
 ## SEO(Search Engine Optimization)
 
 - 대부분의 웹 크롤러, 봇들은 JS를 실행시키지 못하고 HTML에서만 컨텐츠를 수집하기 때문에
-    
-    CSR 방식으로 개발된 페이지를 빈 페이지로 인식하게 됩니다.
-    
+  CSR 방식으로 개발된 페이지를 빈 페이지로 인식하게 됩니다.
 - SSR 방식은 View를 서버에서 전부 렌더링하기 때문에 HTML에 모든 컨텐츠가 저장되어 있어 SEO를 사용하는데 문제가 없습니다.
 
 **CSR vs SSR 차이**
@@ -56,7 +55,7 @@ https://hahahoho5915.tistory.com/52
 
 다른 하나는 나머지를 로딩하는 것
 
-**첫 페이지 로딩시간**- CSR의 경우 HTML, CSS와 모든 스크립트들을 한 번에 불러온다. 
+**첫 페이지 로딩시간**- CSR의 경우 HTML, CSS와 모든 스크립트들을 한 번에 불러온다.
 
 반면 SSR은 필요한 부분의 HTML과 스크립트만 불러오게 된다.
 
@@ -116,13 +115,12 @@ CSR을 사용하자
 
 TTV  
 Time To View  
-사용자가 웹브라우저에서 내용을 볼 수 있는 시점  
+사용자가 웹브라우저에서 내용을 볼 수 있는 시점
 
-  
 TTI  
 Time To Interact  
 사용자가 웹브라우저에서 인터랙션 할 수 있는 시점
 
-
 ## Reference
+
 https://hanamon.kr/spa-mpa-ssr-csr-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EB%9C%BB%EC%A0%95%EB%A6%AC/
