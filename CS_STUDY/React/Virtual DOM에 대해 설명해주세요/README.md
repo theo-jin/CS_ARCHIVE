@@ -47,4 +47,3 @@ Virtual DOM을 사용하는 React의 경우는 ref로 element를 찾습니다.
 ## Reference
 
 https://hyebeen2658.tistory.com/14#%EA%B8%B0%EC%A1%B4%20%EB%A0%8C%EB%8D%94%EB%A7%81%20%EB%B0%A9%EC%8B%9D-1
- 

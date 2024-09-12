@@ -1,4 +1,4 @@
-# react query의 refetch와 invalidate는 어떤 차이가 있나요
+# TanstackQuery의 refetch와 invalidate는 어떤 차이가 있나요
 
 React Query에서 refetch와 invalidate는 데이터를 관리하고 업데이트하는 데 사용되는 두 가지 주요 메소드입니다
 refetch 는 enabled 옵션과 상관없이 무조건 queryFn을 수행한다.

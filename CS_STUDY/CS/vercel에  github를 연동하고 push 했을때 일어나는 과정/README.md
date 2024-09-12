@@ -41,4 +41,3 @@ vercel.file에 있는 Vercel 구성을 검증합니다
 ## Reference
 
 https://vercel.com/blog/behind-the-scenes-of-vercels-infrastructure
-ㅋ

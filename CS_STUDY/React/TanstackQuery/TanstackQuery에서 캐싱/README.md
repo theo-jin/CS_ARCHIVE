@@ -1,9 +1,34 @@
-# TanstackQuery에서 캐싱은 무엇인가요
+# TanstackQuery에서 캐싱과 data fetching의 메커니즘
 
 Tanstack Query (이전 React Query)에서 캐싱은 서버에서 가져온 데이터를 로컬에 저장하는 기능입니다.
 이렇게 저장된 데이터를 캐시라고 합니다. 캐싱 덕분에 동일한 데이터를 반복적으로 요청할 때 서버에 다시 요청하지 않고 로컬에 저장된 캐시 데이터를 사용할 수 있어 성능을 크게 향상시킬 수 있습니다.
 
-# Tanstack Query는 다음과 같은 다양한 캐싱 기능을 제공합니다.
+## data fetching
+
+### useQuery 훅 사용
+
+데이터를 가져오기 위해 useQuery 훅을 사용합니다. 이 훅은 쿼리 키와 쿼리 함수를 인자로 받습니다.
+
+### queryFn
+
+- queryFn은 쿼리함수 의미
+- 쿼리 함수: 비동기 함수로, 데이터를 가져오는 역할을 합니다.주로 API 요청을 처리합니다.   
+
+### queryKey
+
+queryKey 프로퍼티:useQuery를 사용할 때 모든 쿼리 전송하는 모든 fetch 요청
+
+즉, 전송하는 모든 GET HTTP 요청에는 쿼리 키가 있다.Tanstack 쿼리는 내부에서 이 쿼리 키를 이용해 요청으로 생성된 데이터를 캐시 처리한다
+
+그래서 나중에 동일한 요청을 전송하면 이전 요청의 응답을 재사용할 수 있다.
+![alt text](image.png)
+키는 배열이다.이 값의 배열을 리액트 쿼리는 내부적으로 저장한다. 그래서 유사한 값으로 이루어진
+
+유사한 배열을 사용할 때마다 리액트 쿼리는 이 배열을 확인하고 기존 데이터를 재사용 가능
+
+키는 배열이며, 문자열로 국한되지않음 객체를 사용하거나 중첩 배열이나 다른 종류의 값을 사용할 수도 있다.
+
+## Tanstack Query는 다음과 같은 다양한 캐싱 기능을 제공합니다.
 
 - 자동 캐싱: 컴포넌트가 마운트되거나 업데이트될 때 지정된 쿼리 함수를 사용하여 자동으로 데이터를 패칭하고 캐싱합니다.
 - 데이터 무효화: 캐시된 데이터가 만료되거나 특정 조건을 충족할 경우 자동으로 새 데이터를 요청하여 캐시를 최신 상태로 유지합니다.
@@ -11,7 +36,9 @@ Tanstack Query (이전 React Query)에서 캐싱은 서버에서 가져온 데�
 - 쿼리 결과 캐싱: 쿼리 결과 자체뿐만 아니라 쿼리 실행 시 발생하는 오류나 로딩 상태도 캐싱할 수 있습니다.
 
 자동 캐싱: 데이터를 자동으로 캐싱하여 불필요한 API 요청을 줄이고 성능을 향상시킵니다.
+
 stale-while-revalidate: 최신 데이터를 보장하면서 성능을 최적화하는 전략을 제공합니다.
+
 요청 병합: 여러 컴포넌트에서 동일한 데이터를 요청하는 경우 요청을 병합하여 서버 부하를 줄입니다.
 
 ## Tanstack Query 장점
@@ -58,4 +85,6 @@ gcTime의 기본값 5분, staleTime 기본값 0초를 가정하고 라이프 사
 ## Reference
 
 https://tanstack.com/query/v4/docs/reference/QueryCache
-https://github.com/ssi02014/react-query-tutorial?tab=readme-ov-file#%EC%BA%90%EC%8B%B1-%EB%9D%BC%EC%9D%B4%ED%94%84-%EC%82%AC%EC%9D%B4%ED%81%B4
+
+https://github.com/ssi02014/react-query-tutorial?
+tab=readme-ov-file#%EC%BA%90%EC%8B%B1-%EB%9D%BC%EC%9D%B4%ED%94%84-%EC%82%AC%EC%9D%B4%ED%81%B4

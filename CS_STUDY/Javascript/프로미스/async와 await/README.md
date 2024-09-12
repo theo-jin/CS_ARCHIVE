@@ -16,11 +16,11 @@
 
 ```ts
 async function f() {
-  await Promise.reject(new Error("에러 발생!"));
+  await Promise.reject(new Error('에러 발생!'));
 }
 //위 코드는 아래 코드와 동일합니다.
 async function f() {
-  throw new Error("에러 발생!");
+  throw new Error('에러 발생!');
 }
 ```
 

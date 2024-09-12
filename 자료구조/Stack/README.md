@@ -1,62 +1,87 @@
+# 1. 스택의 정의
+
+스택의 ADT를 정의하고 스택의 동작원리를 살펴봅시다.
+ADT(abstract data type): 한국말로 추상 자료형. 인터페이스만 있고 실제로 구현되지 않는 자료형이다. 일종의 자료형의 설계도.
+
+## 스택의 ADT
+
+스택은 우선 다음과 같은 연산을 정의 해야한다.
+
+- 1. push
+- 2. pop
+- 3. isFull
+- 4. isEmpty
+- 5. top
+
+### 스택 세부 동작에 대해
+
+- 스택에 데이터 추가시 연산과정
+  push(3)을 호출시
+
+1. isFull()을 수행하여 우선 data배열에 데이터가 가득 찼는지 확인
+2. 찼지 않다면 top을 1만큼 증가.
+3. data[0]에 3을추가.
+
+- 스택에 데이터 제거시 연산과정
+  pop()을 호출시
+
+1. isEmpty()함수를 우선 수행하여 우선 data배열에 데이터가 없는건 아닌지 확인 확인
+2. 데이터가 있다면 top을 1만큼 김서.
+3. data 3을반환.
+
 ```ts
-class Queue {
-  constructor() {
-    this.storage = {};
-    this.front = 0;
-    this.rear = 0;
-  }
+const stack = []; //스택 초기화
+const maxSize = 10; //스택의 최대 크기
 
-  size() {
-    if (this.storage[this.rear] === undefined) {
-      return 0;
-    } else {
-      return this.rear - this.front + 1;
-    }
-  }
-
-  enqueue(value) {
-    // 큐에 데이터가 아무것도 없는 경우
-    if (this.size() === 0) {
-      // 0번 위치에 값을 넣고 포인터는 건드리지 않는다
-      // 이때 ['0']으로 키를 설정한 이유는
-      // 자바스크립트 객체 Object는 키 값으로 오직
-      // 문자열과 Symbol만 허용하기 때문
-      this.storage['0'] = value;
-    } else {
-      // 그 외의 경우에는 간단하게
-      // rear 위치를 1만큼 늘리고 해당 위치에 값 삽입
-      this.rear += 1;
-      this.storage[this.rear] = value;
-    }
-  }
-
-  dequeue() {
-    let temp; // 첫 원소 값을 임시로 담을 변수
-    // 두 포인터의 값이 같은 경우 (데이터가 1개 남은 경우)
-    // 물론 초기 상태에서 아무런 데이터가 없는 상황일 수도 있으나
-    // 이때 front의 값을 가져오고 제거하는 과정에서
-    // 자바스크립트 특성 상 에러가 발생하지 않고
-    // 두 포인터의 값을 계속 0으로 유지시켜 주기 때문에
-    // 별도로 이 부분에 대한 처리를 해줄 필요는 없지만
-    // 좀 더 호환성 높은 코드를 위해서는 사실 하는 편을 추천
-    if (this.front === this.rear) {
-      // 현재 front에 담긴 값을 가져오고
-      // 항상 이 값을 delete 해주어야 한다
-      temp = this.storage[this.front];
-      delete this.storage[this.front];
-      // 이 부분이 없었다면 이 시점에서 front는
-      // rear의 값 보다 1보다 더 큰 역설에 빠지게 되므로
-      // 데이터가 없는 경우를 다시 0으로 초기화
-      this.front = 0;
-      this.rear = 0;
-    } else {
-      // 현재 front에 담긴 값을 가져오고
-      // 항상 이 값을 delete 해주어야 한다
-      temp = this.storage[this.front];
-      delete this.storage[this.front];
-      this.front += 1;
-    }
-    return temp;
+function isFull(stack) {
+  //스택이 가득 찼는지 확인하는 함수
+  return stack.length === maxSize;
+}
+function isEmpty(stack) {
+  //스택이 비어 있는지 확인하는 함수
+  return stack.length === 0;
+}
+function push(stack, item) {
+  //스택에 데이터를 추가하는 함수
+  if (isFull(stack)) {
+    console.log('스택이 가득 찼습니다');
+  } else {
+    stack.push(item);
+    console.log('데이터가 추가되었습니다.');
   }
 }
+function pop(stack) {
+  // 스택에서 데이터를 꺼내는 함수
+  if (isEmpty(stack)) {
+    console.log('스택이 비어 있습니다.');
+    return null;
+  } else {
+    return stack.pop();
+  }
+}
+```
+
+그러나 JS의 배열은 크기를 동적으로 관리하므로 maxSize나 isFull()함수,isEmpty함수는 실전에서 필요없다.
+
+```ts
+const stack = []; //스택 초기화
+
+function push(stack, item) {
+  //스택에 데이터를 추가하는 함수
+  stack.push(item);
+  console.log('데이터가 추가되었습니다.');
+}
+function pop(stack) {
+  // 스택에서 데이터를 꺼내는 함수
+  if (stack.length === 0) {
+    console.log('스택이 비어 있습니다.');
+    return null;
+  } else {
+    return stack.pop();
+  }
+}
+```
+
+```
+
 ```
